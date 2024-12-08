@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1f1201;
+    font-family: 'Minecraft', sans-serif;
+    text-align: center;
+}
+main {
+    margin-left: 50vw;
+    margin-top: 25vh;
+}
+#icon {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 66.5vw;
+    top: 26vh;
+}
+#txt-name {
+    font-size: 48px;
+    margin-top: -170px;
+    color: lightgreen;
+    text-shadow: 2px 2px 2px black;
+}
+#txt-title {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #d4d3d3;
+    text-shadow: 1px 1px 1px black;
+}

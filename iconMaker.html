@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TXT Icon Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <main>
+        <img style="width: 512px; height: 512px;" src="bg.png" alt="bg" draggable="false">
+        <div><img id="icon" src="icon.png" alt="icon" draggable="false"></div>
+
+        <div id="txt-name">My texture pack</div>
+        <div id="txt-title">Texture Pack</div>
+    </main>
+
+    <script>
+        document.getElementById('txt-name').innerHTML = prompt('Enter your txt name:').slice(0, 18);
+        
+        const packImage = prompt('(optional) Enter pack image:');
+        
+        if (packImage.trim().length === 0) {
+            document.getElementById('icon').src = 'icon.png';
+        } else document.getElementById('icon').src = packImage;
+    </script>
+
+</body>
+</html>
